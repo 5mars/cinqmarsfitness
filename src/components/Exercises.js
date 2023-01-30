@@ -17,6 +17,7 @@ const Exercises = ({ exercises, setExercises, bodyPart}) => {
 
     const indexOfLastExercise = currentPage * exercisesPerPage;
     const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
+
     const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise)
 
     useEffect(() => {
@@ -40,7 +41,7 @@ const Exercises = ({ exercises, setExercises, bodyPart}) => {
         mt="50px"
         p="20px"
         >
-            <Typography variant='h3' mb="46px">
+            <Typography variant='h3' mb="46px" color="#DCDCDC">
                 Showing Results
             </Typography>
             <Stack direction="row" sx={{ gap: { lg: "110px", xs: "50px"}}} flexWrap="wrap" justifyContent="center">

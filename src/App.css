@@ -1,6 +1,6 @@
 body {
     font-family: 'Josefin Sans';
-    background-color: #FFFAFB;
+    background-color: #282634;
 }
 
 * {
@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FF2625;
+    color: #ff4057;
     font-size: 25px;
     border-radius: 4px;
     position: absolute;
@@ -67,7 +67,7 @@ body {
     width: 400px;
     height: 445px;
     background: #fff;
-    border-top: 4px solid #FF2625;
+    border-top: 4px solid #ff4057;
     border-bottom-left-radius: 20px;
     text-decoration: none;
     display: flex;
@@ -85,16 +85,18 @@ body {
 .bodyPart-card {
     transform: scale(1, 1);
     transition: 0.3s all ease-in-out;
+    border-radius: 10px;
 }
 
 .exercise-card:hover,
 .bodyPart-card:hover {
     transform: scale(1.1, 1.1);
+    border-radius: 10px;
 }
 
 .search-btn:hover {
-    color: #FF2625 !important;
-    border: 1px solid #FF2625 !important;
+    color: #ff4057 !important;
+    border: 1px solid #ff4057 !important;
 }
 
 .exercise-video {

@@ -18,7 +18,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
         }
         fetchExercisesData();
     }, [])
-    
 
     const handleSearch = async () => {
         if(search) {
@@ -37,7 +36,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
     }
     return (
         <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
-            <Typography fontWeight={700} sx={{fontSize: { lg: "44px", xs: "30px"}}} mb="50px" textAlign="center">
+            <Typography fontWeight={700} sx={{fontSize: { lg: "44px", xs: "30px"}}} mb="50px" textAlign="center" color="#DCDCDC">
                 Awesome Exercises You <br/> Should Know
             </Typography>
 
@@ -47,11 +46,12 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
                     input: { 
                         fontWeight: "700", 
                         border: "none", 
-                        borderRadius: "4px"
+                        borderRadius: "4px",
+                        color: "white",
                     },
                     width: {lg: "800px", xs: "350px"},
                     backgroundColor: "FFF",
-                    borderRadius: "40px"
+                    borderRadius: "40px",
                 }}
                 height="76px"
                 value={search}
@@ -59,10 +59,11 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
                 placeholder="Search Exercises"
                 type="text"
                 />
+                
                 <Button 
                 className='search-btn'
                 sx={{ 
-                    bgcolor: "#FF2625",
+                    bgcolor: "#ff4057",
                     color: "#FFF",
                     textTransform: "none",
                     width: {lg: "175px", xs: "80px"},

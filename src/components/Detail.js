@@ -30,11 +30,11 @@ const Detail = ({ exerciseDetail }) => {
             <img src={gifUrl} alt={name} loading="lazy" className='detail-image'/>
 
             <Stack sx={{ gap: { lg: "35px", xs: "20px"}}}>
-                <Typography variant='h3'>
+                <Typography variant='h3' color="#ff4057">
                     {name}
                 </Typography>
 
-                <Typography variant='h6'>
+                <Typography variant='h6' color="#DCDCDC">
                     Exercises keep you strong. {name} {" "}is one of the best exercises to target your {target}. It will help you improve your mood and gain energy.
                 </Typography>
                 {extraDetail?.map((item) => (
@@ -44,7 +44,7 @@ const Detail = ({ exerciseDetail }) => {
                             <img src={item.icon} alt={bodyPart} style={{ width: '50px', height: '50px' }} />
                         </Button>
 
-                        <Typography textTransform="capitalize" sx={{ fontSize: { lg: '30px', xs: '20px' } }}>
+                        <Typography textTransform="capitalize" color="#999999" sx={{ fontSize: { lg: '30px', xs: '20px' } }}>
                             {item.name}
                         </Typography>
                     </Stack>
